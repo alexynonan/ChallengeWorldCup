@@ -8,22 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		9584173E2979AC5D0024242B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584173D2979AC5D0024242B /* AppDelegate.swift */; };
-		958417422979AC5D0024242B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958417412979AC5D0024242B /* ViewController.swift */; };
 		958417452979AC5D0024242B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958417432979AC5D0024242B /* Main.storyboard */; };
 		958417482979AC5D0024242B /* WorldCup.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 958417462979AC5D0024242B /* WorldCup.xcdatamodeld */; };
 		9584174A2979AC5E0024242B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958417492979AC5E0024242B /* Assets.xcassets */; };
 		9584174D2979AC5E0024242B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9584174B2979AC5E0024242B /* LaunchScreen.storyboard */; };
+		9584175F2979B1230024242B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9584175E2979B1230024242B /* Colors.xcassets */; };
+		958417612979B12F0024242B /* General.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958417602979B12F0024242B /* General.xcassets */; };
+		958417632979B1480024242B /* WCSplashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958417622979B1480024242B /* WCSplashModel.swift */; };
+		958417652979B15B0024242B /* WCSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958417642979B15B0024242B /* WCSplashViewController.swift */; };
+		958417682979B18F0024242B /* WCLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958417672979B18F0024242B /* WCLoginViewController.swift */; };
+		9584176B2979B1A10024242B /* WCLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584176A2979B1A10024242B /* WCLoginModel.swift */; };
+		9584176D2979B1B30024242B /* WCRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584176C2979B1B30024242B /* WCRegisterModel.swift */; };
+		958417702979B1C90024242B /* WCRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584176F2979B1C90024242B /* WCRegisterViewController.swift */; };
+		958417732979B1DF0024242B /* WCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958417722979B1DF0024242B /* WCHomeViewController.swift */; };
+		958417752979B1E80024242B /* WCHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958417742979B1E80024242B /* WCHomeModel.swift */; };
+		958417772979B2100024242B /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958417762979B2100024242B /* Closures.swift */; };
+		958417792979B24C0024242B /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958417782979B24C0024242B /* Segues.swift */; };
+		9584177B2979B26C0024242B /* MessageAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584177A2979B26C0024242B /* MessageAlert.swift */; };
+		A33CC682B8FC8EFBFA37FE9E /* Pods_WorldCup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF7571601B86C7F98CEC1B /* Pods_WorldCup.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C4D103B2C88B9EA78FE17E3 /* Pods-WorldCup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldCup.debug.xcconfig"; path = "Target Support Files/Pods-WorldCup/Pods-WorldCup.debug.xcconfig"; sourceTree = "<group>"; };
 		9584173A2979AC5D0024242B /* WorldCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9584173D2979AC5D0024242B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		958417412979AC5D0024242B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		958417442979AC5D0024242B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		958417472979AC5D0024242B /* WorldCup.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorldCup.xcdatamodel; sourceTree = "<group>"; };
 		958417492979AC5E0024242B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9584174C2979AC5E0024242B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9584174E2979AC5E0024242B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9584175E2979B1230024242B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		958417602979B12F0024242B /* General.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = General.xcassets; sourceTree = "<group>"; };
+		958417622979B1480024242B /* WCSplashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSplashModel.swift; sourceTree = "<group>"; };
+		958417642979B15B0024242B /* WCSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSplashViewController.swift; sourceTree = "<group>"; };
+		958417672979B18F0024242B /* WCLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCLoginViewController.swift; sourceTree = "<group>"; };
+		9584176A2979B1A10024242B /* WCLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCLoginModel.swift; sourceTree = "<group>"; };
+		9584176C2979B1B30024242B /* WCRegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCRegisterModel.swift; sourceTree = "<group>"; };
+		9584176F2979B1C90024242B /* WCRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCRegisterViewController.swift; sourceTree = "<group>"; };
+		958417722979B1DF0024242B /* WCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCHomeViewController.swift; sourceTree = "<group>"; };
+		958417742979B1E80024242B /* WCHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCHomeModel.swift; sourceTree = "<group>"; };
+		958417762979B2100024242B /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		958417782979B24C0024242B /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		9584177A2979B26C0024242B /* MessageAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAlert.swift; sourceTree = "<group>"; };
+		D5DF7571601B86C7F98CEC1B /* Pods_WorldCup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldCup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D767C7A5933CDAFFDAE45ED6 /* Pods-WorldCup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldCup.release.xcconfig"; path = "Target Support Files/Pods-WorldCup/Pods-WorldCup.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33CC682B8FC8EFBFA37FE9E /* Pods_WorldCup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195C5DCB3D916D6C112745D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5DF7571601B86C7F98CEC1B /* Pods_WorldCup.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		369C8FC109A1AEFC8601FCE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D103B2C88B9EA78FE17E3 /* Pods-WorldCup.debug.xcconfig */,
+				D767C7A5933CDAFFDAE45ED6 /* Pods-WorldCup.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		958417312979AC5D0024242B = {
 			isa = PBXGroup;
 			children = (
 				9584173C2979AC5D0024242B /* WorldCup */,
 				9584173B2979AC5D0024242B /* Products */,
+				369C8FC109A1AEFC8601FCE7 /* Pods */,
+				195C5DCB3D916D6C112745D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +105,162 @@
 			isa = PBXGroup;
 			children = (
 				9584173D2979AC5D0024242B /* AppDelegate.swift */,
-				958417412979AC5D0024242B /* ViewController.swift */,
-				958417432979AC5D0024242B /* Main.storyboard */,
-				958417492979AC5E0024242B /* Assets.xcassets */,
+				958417542979B08D0024242B /* iPhone */,
 				9584174B2979AC5E0024242B /* LaunchScreen.storyboard */,
 				9584174E2979AC5E0024242B /* Info.plist */,
 				958417462979AC5D0024242B /* WorldCup.xcdatamodeld */,
 			);
 			path = WorldCup;
+			sourceTree = "<group>";
+		};
+		958417542979B08D0024242B /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				958417592979B0D40024242B /* General */,
+				9584177C2979B2920024242B /* API */,
+				958417552979B0930024242B /* MVVM */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		958417552979B0930024242B /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				958417562979B0A10024242B /* Model */,
+				958417572979B0AA0024242B /* View */,
+				958417582979B0AE0024242B /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		958417562979B0A10024242B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		958417572979B0AA0024242B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				958417432979AC5D0024242B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		958417582979B0AE0024242B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9584175A2979B0F10024242B /* Splash */,
+				9584175C2979B0FC0024242B /* Login */,
+				9584175D2979B1010024242B /* Register */,
+				9584175B2979B0F60024242B /* Home */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		958417592979B0D40024242B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				958417492979AC5E0024242B /* Assets.xcassets */,
+				9584175E2979B1230024242B /* Colors.xcassets */,
+				958417602979B12F0024242B /* General.xcassets */,
+				958417762979B2100024242B /* Closures.swift */,
+				958417782979B24C0024242B /* Segues.swift */,
+				9584177A2979B26C0024242B /* MessageAlert.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		9584175A2979B0F10024242B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				958417642979B15B0024242B /* WCSplashViewController.swift */,
+				958417662979B1650024242B /* Model */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		9584175B2979B0F60024242B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				958417722979B1DF0024242B /* WCHomeViewController.swift */,
+				958417712979B1D00024242B /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9584175C2979B0FC0024242B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				958417672979B18F0024242B /* WCLoginViewController.swift */,
+				958417692979B1930024242B /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9584175D2979B1010024242B /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				9584176F2979B1C90024242B /* WCRegisterViewController.swift */,
+				9584176E2979B1BB0024242B /* Model */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		958417662979B1650024242B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				958417622979B1480024242B /* WCSplashModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		958417692979B1930024242B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9584176A2979B1A10024242B /* WCLoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9584176E2979B1BB0024242B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9584176C2979B1B30024242B /* WCRegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		958417712979B1D00024242B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				958417742979B1E80024242B /* WCHomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9584177C2979B2920024242B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9584177E2979B2A00024242B /* WS */,
+				9584177D2979B29C0024242B /* BL */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9584177D2979B29C0024242B /* BL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BL;
+			sourceTree = "<group>";
+		};
+		9584177E2979B2A00024242B /* WS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 958417512979AC5E0024242B /* Build configuration list for PBXNativeTarget "WorldCup" */;
 			buildPhases = (
+				7BD42C437995BDC1548BB050 /* [CP] Check Pods Manifest.lock */,
 				958417362979AC5D0024242B /* Sources */,
 				958417372979AC5D0024242B /* Frameworks */,
 				958417382979AC5D0024242B /* Resources */,
+				9548F0BCEA7B010B02EE971E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9584174D2979AC5E0024242B /* LaunchScreen.storyboard in Resources */,
+				9584175F2979B1230024242B /* Colors.xcassets in Resources */,
+				958417612979B12F0024242B /* General.xcassets in Resources */,
 				9584174A2979AC5E0024242B /* Assets.xcassets in Resources */,
 				958417452979AC5D0024242B /* Main.storyboard in Resources */,
 			);
@@ -133,14 +333,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7BD42C437995BDC1548BB050 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorldCup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9548F0BCEA7B010B02EE971E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorldCup/Pods-WorldCup-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorldCup/Pods-WorldCup-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorldCup/Pods-WorldCup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		958417362979AC5D0024242B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958417422979AC5D0024242B /* ViewController.swift in Sources */,
 				958417482979AC5D0024242B /* WorldCup.xcdatamodeld in Sources */,
+				9584176D2979B1B30024242B /* WCRegisterModel.swift in Sources */,
 				9584173E2979AC5D0024242B /* AppDelegate.swift in Sources */,
+				958417632979B1480024242B /* WCSplashModel.swift in Sources */,
+				958417732979B1DF0024242B /* WCHomeViewController.swift in Sources */,
+				9584176B2979B1A10024242B /* WCLoginModel.swift in Sources */,
+				958417652979B15B0024242B /* WCSplashViewController.swift in Sources */,
+				958417792979B24C0024242B /* Segues.swift in Sources */,
+				9584177B2979B26C0024242B /* MessageAlert.swift in Sources */,
+				958417682979B18F0024242B /* WCLoginViewController.swift in Sources */,
+				958417752979B1E80024242B /* WCHomeModel.swift in Sources */,
+				958417702979B1C90024242B /* WCRegisterViewController.swift in Sources */,
+				958417772979B2100024242B /* Closures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +534,7 @@
 		};
 		958417522979AC5E0024242B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4D103B2C88B9EA78FE17E3 /* Pods-WorldCup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +567,7 @@
 		};
 		958417532979AC5E0024242B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D767C7A5933CDAFFDAE45ED6 /* Pods-WorldCup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
