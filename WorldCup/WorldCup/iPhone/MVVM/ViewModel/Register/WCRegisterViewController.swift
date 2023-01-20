@@ -9,13 +9,30 @@ import UIKit
 
 class WCRegisterViewController: UIViewController {
 
+    @IBOutlet weak private var txtEmail: UITextField!
+    @IBOutlet weak private var txtPassword: UITextField!
+    @IBOutlet weak private var txtPasswordConfirm: UITextField!
+    @IBOutlet weak private var loadActivity: UIActivityIndicatorView!
+
+    private var registerModel: WCRegisterModel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loadModel()
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction private func btnRegister(_ sender: UIButton) {
+        guard registerModel != nil else { return }
+        loadActivity.startAnimating()
+        registerModel.registerUser(
+            email: txtEmail.text,
+            password: txtPassword.text,
+            passwordConfirm: txtPasswordConfirm.text
+        ) {
+            loadActivity.stopAnimating()
+        }
+    }
     /*
     // MARK: - Navigation
 
@@ -26,4 +43,12 @@ class WCRegisterViewController: UIViewController {
     }
     */
 
+}
+
+
+extension WCRegisterViewController {
+
+    private func loadModel() {
+        registerModel = WCRegisterModel(toController: self)
+    }
 }

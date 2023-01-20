@@ -65,6 +65,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_splash" translatesAutoresizingMaskIntoConstraints="NO" id="bKI-e7-WvV">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfv-5m-d41" customClass="CSUIShadowView" customModule="CSUI">
                                 <rect key="frame" x="50" y="391" width="330" height="350"/>
@@ -83,14 +84,25 @@
                                         <color key="textColor" name="color_black"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="p_holderColor">
+                                                <color key="value" name="color_gray_placeHolder"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="***********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TV0-ae-VHD" customClass="CSUITextField" customModule="CSUI">
                                         <rect key="frame" x="20" y="159" width="290" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="H8u-9F-7pn"/>
                                         </constraints>
+                                        <color key="textColor" name="color_black"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="p_holderColor">
+                                                <color key="value" name="color_gray_placeHolder"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO1-ZV-Obe" customClass="CSUIButton" customModule="CSUI">
                                         <rect key="frame" x="80" y="260" width="170" height="40"/>
@@ -109,6 +121,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnLoginSession:" destination="JC4-P2-1UO" eventType="touchUpInside" id="JlO-0w-IN2"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYd-L1-KSJ">
                                         <rect key="frame" x="20" y="129" width="290" height="1"/>
@@ -131,7 +146,14 @@
                                         <state key="normal" title="Regístrate">
                                             <color key="titleColor" name="color_red"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnRegister:" destination="JC4-P2-1UO" eventType="touchUpInside" id="UWB-lm-EXJ"/>
+                                        </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="xJK-tN-EFb">
+                                        <rect key="frame" x="220" y="270" width="20" height="20"/>
+                                        <color key="color" name="color_withe"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -150,7 +172,9 @@
                                     <constraint firstItem="TV0-ae-VHD" firstAttribute="leading" secondItem="ndm-jN-1xO" secondAttribute="leading" id="byV-Gz-H7l"/>
                                     <constraint firstAttribute="trailing" secondItem="ndm-jN-1xO" secondAttribute="trailing" constant="20" id="c65-Bn-RXo"/>
                                     <constraint firstItem="rYd-L1-KSJ" firstAttribute="trailing" secondItem="ndm-jN-1xO" secondAttribute="trailing" id="csd-ea-10m"/>
+                                    <constraint firstItem="xJK-tN-EFb" firstAttribute="trailing" secondItem="JO1-ZV-Obe" secondAttribute="trailing" constant="-10" id="dOU-98-Au3"/>
                                     <constraint firstItem="TV0-ae-VHD" firstAttribute="trailing" secondItem="ndm-jN-1xO" secondAttribute="trailing" id="djt-7h-MZ5"/>
+                                    <constraint firstItem="xJK-tN-EFb" firstAttribute="centerY" secondItem="JO1-ZV-Obe" secondAttribute="centerY" id="dyi-er-WEA"/>
                                     <constraint firstItem="85z-PC-cHN" firstAttribute="top" secondItem="TV0-ae-VHD" secondAttribute="bottom" id="l2S-d7-y8T"/>
                                     <constraint firstItem="VgB-lC-Qf2" firstAttribute="centerX" secondItem="JO1-ZV-Obe" secondAttribute="centerX" id="qAv-mx-xWr"/>
                                     <constraint firstItem="ndm-jN-1xO" firstAttribute="leading" secondItem="zfv-5m-d41" secondAttribute="leading" constant="20" id="xbD-vt-uL0"/>
@@ -203,13 +227,24 @@
                             <constraint firstItem="bKI-e7-WvV" firstAttribute="top" secondItem="l0c-UI-fBh" secondAttribute="top" id="etA-dF-a8k"/>
                             <constraint firstItem="lRm-6C-oKf" firstAttribute="leading" secondItem="uvJ-h9-vcU" secondAttribute="leading" id="op8-6C-qQf"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="QTS-BL-Juc" appends="YES" id="gRY-PG-A3L"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="c73-Tw-M7C"/>
                     <connections>
+                        <outlet property="loadActivity" destination="xJK-tN-EFb" id="hmv-Z9-JPg"/>
+                        <outlet property="txtEmail" destination="ndm-jN-1xO" id="yb9-lD-Oen"/>
+                        <outlet property="txtPassword" destination="TV0-ae-VHD" id="Q8j-FP-eTd"/>
                         <segue destination="4td-zV-MVb" kind="show" identifier="WCRegisterViewController" id="UEr-y9-M5h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pv-Ty-9Ui" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QTS-BL-Juc">
+                    <connections>
+                        <action selector="btnTapKeyboard:" destination="JC4-P2-1UO" id="zuI-PM-edL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2017.5572519083969" y="4.9295774647887329"/>
         </scene>
@@ -241,9 +276,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_splash" translatesAutoresizingMaskIntoConstraints="NO" id="fWB-nd-nJI">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="JaJ-CE-a0G" appends="YES" id="xYa-D2-Jak"/>
-                                </connections>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYd-82-I0a" customClass="CSUIShadowView" customModule="CSUI">
                                 <rect key="frame" x="20" y="123" width="390" height="755"/>
@@ -341,6 +373,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnRegister:" destination="4td-zV-MVb" eventType="touchUpInside" id="M1D-oi-7R0"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="***********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-ol-FbO" customClass="CSUITextField" customModule="CSUI">
                                         <rect key="frame" x="20" y="248" width="350" height="44"/>
@@ -398,6 +433,10 @@
                                         <color key="textColor" name="color_withe"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="AKT-MM-qVI">
+                                        <rect key="frame" x="250" y="673" width="20" height="20"/>
+                                        <color key="color" name="color_withe"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -416,8 +455,10 @@
                                     <constraint firstItem="1MT-bx-fBM" firstAttribute="top" secondItem="U5q-BB-h60" secondAttribute="bottom" constant="50" id="gEd-FM-mRI"/>
                                     <constraint firstItem="U5q-BB-h60" firstAttribute="top" secondItem="LTI-cF-mws" secondAttribute="bottom" constant="5" id="iZI-by-jfd"/>
                                     <constraint firstItem="LTI-cF-mws" firstAttribute="leading" secondItem="U5q-BB-h60" secondAttribute="leading" id="o1k-1W-vpR"/>
+                                    <constraint firstItem="AKT-MM-qVI" firstAttribute="centerY" secondItem="XE4-87-o5R" secondAttribute="centerY" id="q03-3w-Jxz"/>
                                     <constraint firstAttribute="bottom" secondItem="XE4-87-o5R" secondAttribute="bottom" constant="50" id="qU8-JV-aFq"/>
                                     <constraint firstItem="U5q-BB-h60" firstAttribute="leading" secondItem="uYd-82-I0a" secondAttribute="leading" constant="20" id="rfX-Zu-FX5"/>
+                                    <constraint firstItem="AKT-MM-qVI" firstAttribute="trailing" secondItem="XE4-87-o5R" secondAttribute="trailing" constant="-10" id="uVN-If-s4b"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -489,8 +530,17 @@
                             <constraint firstItem="zqa-OM-jpk" firstAttribute="leading" secondItem="k4w-UE-zTh" secondAttribute="leading" id="psm-Ru-DbU"/>
                             <constraint firstItem="IsI-WW-5mJ" firstAttribute="leading" secondItem="k4w-UE-zTh" secondAttribute="leading" id="vwn-Vx-jI3"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JaJ-CE-a0G" appends="YES" id="kHB-lT-t4g"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Kv7-oa-lUr"/>
+                    <connections>
+                        <outlet property="loadActivity" destination="AKT-MM-qVI" id="k0b-XT-qx5"/>
+                        <outlet property="txtEmail" destination="U5q-BB-h60" id="XkB-ME-1gf"/>
+                        <outlet property="txtPassword" destination="1MT-bx-fBM" id="tqX-cF-wKJ"/>
+                        <outlet property="txtPasswordConfirm" destination="iJE-ol-FbO" id="0SQ-9Q-akP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SY8-ZM-VN7" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="JaJ-CE-a0G">
@@ -533,7 +583,7 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="color_gray_placeHolder">
-            <color red="0.40463226010101006" green="0.40463226010101006" blue="0.40463226010101006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.4050000011920929" green="0.4050000011920929" blue="0.4050000011920929" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_red">
             <color red="0.5220000147819519" green="0.11800000071525574" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
