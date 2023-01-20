@@ -20,10 +20,6 @@ class WCSplashModel: NSObject {
     }
     
     func prepareModel(for segue: UIStoryboardSegue, sender: Any?) {
-        if let controller = segue.destination as? WCLoginViewController {
-//            guard let obj = sender as? FoodBE else { return }
-//            controller.didRecieveDataFood(objFood: obj)
-        }
     }
 }
 
@@ -32,10 +28,19 @@ extension WCSplashModel {
     private func toHomeController() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.succesSplashToController()
-            self.controller?.performSegue(
-                withIdentifier: Segues.loginViewController,
-                sender: nil
-            )
+            
+            if let _ = WCSessionBL.getUserSession() {
+                self.controller?.performSegue(
+                    withIdentifier: Segues.homeViewController,
+                    sender: nil
+                )
+            } else {
+                self.controller?.performSegue(
+                    withIdentifier: Segues.loginViewController,
+                    sender: nil
+                )
+            }
+            
         }
     }
     

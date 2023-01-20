@@ -19,5 +19,10 @@ struct MessageAlert {
         static let errorServiceNotFount = "Problemas con el servicio"
         static let errorServiceAccount = "Intentar de nuevo"
         static let errorInformation = "Sin información"
+        static let errorName = "Ingrese un nombre"
+        static let errorEmail = "Ingrese un correo correcto"
+        static let errorPassword = "Ingrese una constraseña correcta"
+        static let errorConfirmPassword = "Contraseñas no coinciden"
+        static let errorSession = "La session no se pudo guardar"
     }
 }

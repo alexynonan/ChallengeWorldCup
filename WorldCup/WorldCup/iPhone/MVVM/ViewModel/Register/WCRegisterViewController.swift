@@ -9,6 +9,7 @@ import UIKit
 
 class WCRegisterViewController: UIViewController {
 
+    @IBOutlet weak private var txtName: UITextField!
     @IBOutlet weak private var txtEmail: UITextField!
     @IBOutlet weak private var txtPassword: UITextField!
     @IBOutlet weak private var txtPasswordConfirm: UITextField!
@@ -26,11 +27,12 @@ class WCRegisterViewController: UIViewController {
         guard registerModel != nil else { return }
         loadActivity.startAnimating()
         registerModel.registerUser(
+            name: txtName.text,
             email: txtEmail.text,
             password: txtPassword.text,
             passwordConfirm: txtPasswordConfirm.text
-        ) {
-            loadActivity.stopAnimating()
+        ) { [weak self] in
+            self?.loadActivity.stopAnimating()
         }
     }
     /*

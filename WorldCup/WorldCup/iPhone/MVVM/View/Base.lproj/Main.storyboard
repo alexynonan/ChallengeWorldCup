@@ -49,11 +49,22 @@
                     <connections>
                         <outlet property="loadActivity" destination="KaH-9V-5wF" id="j0Y-6c-wVk"/>
                         <segue destination="JC4-P2-1UO" kind="show" identifier="WCLoginViewController" id="uaC-Ni-FYi"/>
+                        <segue destination="M19-Ut-JkW" kind="show" identifier="WCHomeViewController" id="QXl-Xk-9eS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1061.8320610687022" y="4.9295774647887329"/>
+        </scene>
+        <!--WCHomeViewController-->
+        <scene sceneID="hYd-Q2-OlH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="WCHomeViewController" id="M19-Ut-JkW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ypJ-FG-5ha"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzC-Hj-IHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="544"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="XYP-eX-JBa">
@@ -237,6 +248,7 @@
                         <outlet property="txtEmail" destination="ndm-jN-1xO" id="yb9-lD-Oen"/>
                         <outlet property="txtPassword" destination="TV0-ae-VHD" id="Q8j-FP-eTd"/>
                         <segue destination="4td-zV-MVb" kind="show" identifier="WCRegisterViewController" id="UEr-y9-M5h"/>
+                        <segue destination="M19-Ut-JkW" kind="show" identifier="WCHomeViewController" id="12c-hi-Roq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pv-Ty-9Ui" sceneMemberID="firstResponder"/>
@@ -281,7 +293,7 @@
                                 <rect key="frame" x="20" y="123" width="390" height="755"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="example@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5q-BB-h60" customClass="CSUITextField" customModule="CSUI">
-                                        <rect key="frame" x="20" y="60" width="350" height="44"/>
+                                        <rect key="frame" x="20" y="150" width="350" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="7f5-Oj-pcW"/>
                                         </constraints>
@@ -319,7 +331,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="***********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1MT-bx-fBM" customClass="CSUITextField" customModule="CSUI">
-                                        <rect key="frame" x="20" y="154" width="350" height="44"/>
+                                        <rect key="frame" x="20" y="244" width="350" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="n0a-mR-FbQ"/>
                                         </constraints>
@@ -378,7 +390,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="***********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iJE-ol-FbO" customClass="CSUITextField" customModule="CSUI">
-                                        <rect key="frame" x="20" y="248" width="350" height="44"/>
+                                        <rect key="frame" x="20" y="338" width="350" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="r8p-2r-XhI"/>
                                         </constraints>
@@ -416,19 +428,19 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTI-cF-mws">
-                                        <rect key="frame" x="19.999999999999996" y="33.666666666666657" width="49.666666666666657" height="21.333333333333329"/>
+                                        <rect key="frame" x="19.999999999999996" y="123.66666666666664" width="49.666666666666657" height="21.333333333333329"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                         <color key="textColor" name="color_withe"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxd-M8-Dx8">
-                                        <rect key="frame" x="20" y="127.66666666666664" width="79" height="21.3333333333333"/>
+                                        <rect key="frame" x="20" y="217.66666666666669" width="79" height="21.333333333333343"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                         <color key="textColor" name="color_withe"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmar contraseña:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK0-rO-8CJ">
-                                        <rect key="frame" x="20" y="221.66666666666669" width="148" height="21.333333333333343"/>
+                                        <rect key="frame" x="20" y="311.66666666666669" width="148" height="21.333333333333314"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                         <color key="textColor" name="color_withe"/>
                                         <nil key="highlightedColor"/>
@@ -437,18 +449,66 @@
                                         <rect key="frame" x="250" y="673" width="20" height="20"/>
                                         <color key="color" name="color_withe"/>
                                     </activityIndicatorView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Example" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qEm-Tw-ZcJ" customClass="CSUITextField" customModule="CSUI">
+                                        <rect key="frame" x="20" y="49.666666666666657" width="350" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="gJd-Wl-2vJ"/>
+                                        </constraints>
+                                        <color key="textColor" name="color_withe"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="color_withe"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="p_errorColor">
+                                                <color key="value" name="color_withe"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="p_editingColor">
+                                                <color key="value" name="color_withe"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="p_endEditingColor">
+                                                <color key="value" name="color_withe"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="p_holderColor">
+                                                <color key="value" name="color_gray_placeHolder"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftMargin">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightMargin">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbM-Xm-oVq">
+                                        <rect key="frame" x="20.000000000000004" y="23.333333333333343" width="41.333333333333343" height="21.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                        <color key="textColor" name="color_withe"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="iJE-ol-FbO" firstAttribute="leading" secondItem="1MT-bx-fBM" secondAttribute="leading" id="2he-8L-kba"/>
                                     <constraint firstItem="iJE-ol-FbO" firstAttribute="top" secondItem="gK0-rO-8CJ" secondAttribute="bottom" constant="5" id="6vD-oq-HWZ"/>
+                                    <constraint firstItem="qEm-Tw-ZcJ" firstAttribute="trailing" secondItem="U5q-BB-h60" secondAttribute="trailing" id="9MK-R1-52L"/>
                                     <constraint firstItem="1MT-bx-fBM" firstAttribute="trailing" secondItem="U5q-BB-h60" secondAttribute="trailing" id="9cM-4k-mbh"/>
+                                    <constraint firstItem="LTI-cF-mws" firstAttribute="top" secondItem="qEm-Tw-ZcJ" secondAttribute="bottom" constant="30" id="FER-VI-eJ9"/>
                                     <constraint firstAttribute="trailing" secondItem="U5q-BB-h60" secondAttribute="trailing" constant="20" id="FEy-iY-2be"/>
+                                    <constraint firstItem="qEm-Tw-ZcJ" firstAttribute="leading" secondItem="U5q-BB-h60" secondAttribute="leading" id="HZy-d0-8uY"/>
                                     <constraint firstItem="iJE-ol-FbO" firstAttribute="trailing" secondItem="1MT-bx-fBM" secondAttribute="trailing" id="INH-V6-Ukp"/>
                                     <constraint firstItem="XE4-87-o5R" firstAttribute="centerX" secondItem="uYd-82-I0a" secondAttribute="centerX" id="Lcx-Gu-G6b"/>
-                                    <constraint firstItem="U5q-BB-h60" firstAttribute="top" secondItem="uYd-82-I0a" secondAttribute="top" constant="60" id="Nb5-Vy-mKO"/>
+                                    <constraint firstItem="U5q-BB-h60" firstAttribute="top" secondItem="uYd-82-I0a" secondAttribute="top" constant="150" id="Nb5-Vy-mKO"/>
                                     <constraint firstItem="vxd-M8-Dx8" firstAttribute="leading" secondItem="1MT-bx-fBM" secondAttribute="leading" id="Q3y-mZ-Gr2"/>
                                     <constraint firstItem="1MT-bx-fBM" firstAttribute="leading" secondItem="U5q-BB-h60" secondAttribute="leading" id="S7r-SD-Qzh"/>
+                                    <constraint firstItem="qEm-Tw-ZcJ" firstAttribute="top" secondItem="hbM-Xm-oVq" secondAttribute="bottom" constant="5" id="WZ5-hE-iFs"/>
                                     <constraint firstItem="iJE-ol-FbO" firstAttribute="top" secondItem="1MT-bx-fBM" secondAttribute="bottom" constant="50" id="Wnr-v5-ihC"/>
                                     <constraint firstItem="1MT-bx-fBM" firstAttribute="top" secondItem="vxd-M8-Dx8" secondAttribute="bottom" constant="5" id="Xx5-cy-hPE"/>
                                     <constraint firstItem="gK0-rO-8CJ" firstAttribute="leading" secondItem="iJE-ol-FbO" secondAttribute="leading" id="aZO-1R-Vc6"/>
@@ -458,6 +518,7 @@
                                     <constraint firstItem="AKT-MM-qVI" firstAttribute="centerY" secondItem="XE4-87-o5R" secondAttribute="centerY" id="q03-3w-Jxz"/>
                                     <constraint firstAttribute="bottom" secondItem="XE4-87-o5R" secondAttribute="bottom" constant="50" id="qU8-JV-aFq"/>
                                     <constraint firstItem="U5q-BB-h60" firstAttribute="leading" secondItem="uYd-82-I0a" secondAttribute="leading" constant="20" id="rfX-Zu-FX5"/>
+                                    <constraint firstItem="hbM-Xm-oVq" firstAttribute="leading" secondItem="qEm-Tw-ZcJ" secondAttribute="leading" id="uF0-pX-jLT"/>
                                     <constraint firstItem="AKT-MM-qVI" firstAttribute="trailing" secondItem="XE4-87-o5R" secondAttribute="trailing" constant="-10" id="uVN-If-s4b"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -538,8 +599,10 @@
                     <connections>
                         <outlet property="loadActivity" destination="AKT-MM-qVI" id="k0b-XT-qx5"/>
                         <outlet property="txtEmail" destination="U5q-BB-h60" id="XkB-ME-1gf"/>
+                        <outlet property="txtName" destination="qEm-Tw-ZcJ" id="QBV-3N-GBV"/>
                         <outlet property="txtPassword" destination="1MT-bx-fBM" id="tqX-cF-wKJ"/>
                         <outlet property="txtPasswordConfirm" destination="iJE-ol-FbO" id="0SQ-9Q-akP"/>
+                        <segue destination="M19-Ut-JkW" kind="show" identifier="WCHomeViewController" id="STR-vK-YVs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SY8-ZM-VN7" sceneMemberID="firstResponder"/>
@@ -549,7 +612,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2861.8320610687024" y="4.9295774647887329"/>
+            <point key="canvasLocation" x="2937" y="5"/>
         </scene>
     </scenes>
     <designables>
@@ -574,7 +637,13 @@
         <designable name="ndm-jN-1xO">
             <size key="intrinsicContentSize" width="133" height="18.666666666666668"/>
         </designable>
+        <designable name="qEm-Tw-ZcJ">
+            <size key="intrinsicContentSize" width="54.666666666666664" height="18.666666666666668"/>
+        </designable>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="STR-vK-YVs"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="ic_background" width="976.66668701171875" height="1166.6666259765625"/>
         <image name="ic_exit" width="24" height="24"/>

@@ -11,8 +11,10 @@ struct Closures {
 
     //MARK: General
     typealias ErrorMessage = (_ errorMessage: String) -> Void
+    typealias ErrorMessageTK = (_ errorMessage: String,_ stateToken: Bool) -> Void
     typealias Message = (_ message: String) -> Void
     typealias Success = () -> Void
+    typealias SuccessHome = (_ response: [WCHome]) -> Void
     typealias Image = (_ image: UIImage)   -> Void
 
     //MARK: WebServices

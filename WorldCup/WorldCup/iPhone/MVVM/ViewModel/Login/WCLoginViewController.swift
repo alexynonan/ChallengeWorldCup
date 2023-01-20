@@ -32,8 +32,8 @@ class WCLoginViewController: UIViewController {
         loginModel.sessionLogin(
             email: txtEmail.text,
             password: txtPassword.text
-        ) {
-            loadActivity.stopAnimating()
+        ) { [weak self] in
+            self?.loadActivity.stopAnimating()
         }
     }
 

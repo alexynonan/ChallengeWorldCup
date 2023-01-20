@@ -25,6 +25,22 @@
 		958417772979B2100024242B /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958417762979B2100024242B /* Closures.swift */; };
 		958417792979B24C0024242B /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958417782979B24C0024242B /* Segues.swift */; };
 		9584177B2979B26C0024242B /* MessageAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584177A2979B26C0024242B /* MessageAlert.swift */; };
+		95CCE894297AD1E500A7CF81 /* WCLoginWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE893297AD1E500A7CF81 /* WCLoginWS.swift */; };
+		95CCE896297AD29B00A7CF81 /* UISessionRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE895297AD29B00A7CF81 /* UISessionRegister.swift */; };
+		95CCE898297AD33000A7CF81 /* WebServicesURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE897297AD33000A7CF81 /* WebServicesURL.swift */; };
+		95CCE89B297AD4CB00A7CF81 /* WCLoginBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE89A297AD4CB00A7CF81 /* WCLoginBL.swift */; };
+		95CCE89D297AD6E800A7CF81 /* WCGenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE89C297AD6E800A7CF81 /* WCGenericResponse.swift */; };
+		95CCE8A0297AEBD700A7CF81 /* WCRegisterWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE89F297AEBD700A7CF81 /* WCRegisterWS.swift */; };
+		95CCE8A3297AEECF00A7CF81 /* WCRegisterBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE8A2297AEECF00A7CF81 /* WCRegisterBL.swift */; };
+		95CCE8A6297AF09500A7CF81 /* WCSessionBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE8A5297AF09500A7CF81 /* WCSessionBL.swift */; };
+		95CCE8A8297AF0BE00A7CF81 /* WCUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE8A7297AF0BE00A7CF81 /* WCUser.swift */; };
+		95CCE8AA297AF43700A7CF81 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CCE8A9297AF43700A7CF81 /* Home.storyboard */; };
+		95CCE8AC297AF5E600A7CF81 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE8AB297AF5E600A7CF81 /* PinterestLayout.swift */; };
+		95CCE8AE297AF71F00A7CF81 /* WCHomeCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE8AD297AF71F00A7CF81 /* WCHomeCollectionViewModel.swift */; };
+		95CCE8B0297AF73B00A7CF81 /* WCHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE8AF297AF73B00A7CF81 /* WCHome.swift */; };
+		95CCE8B3297AF81900A7CF81 /* WCHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE8B2297AF81900A7CF81 /* WCHomeCollectionViewCell.swift */; };
+		95CCE8B5297AF92A00A7CF81 /* WCHomeWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE8B4297AF92A00A7CF81 /* WCHomeWS.swift */; };
+		95CCE8B9297B086600A7CF81 /* WCHomeBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCE8B8297B086600A7CF81 /* WCHomeBL.swift */; };
 		A33CC682B8FC8EFBFA37FE9E /* Pods_WorldCup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF7571601B86C7F98CEC1B /* Pods_WorldCup.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +66,22 @@
 		958417762979B2100024242B /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		958417782979B24C0024242B /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
 		9584177A2979B26C0024242B /* MessageAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAlert.swift; sourceTree = "<group>"; };
+		95CCE893297AD1E500A7CF81 /* WCLoginWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCLoginWS.swift; sourceTree = "<group>"; };
+		95CCE895297AD29B00A7CF81 /* UISessionRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISessionRegister.swift; sourceTree = "<group>"; };
+		95CCE897297AD33000A7CF81 /* WebServicesURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServicesURL.swift; sourceTree = "<group>"; };
+		95CCE89A297AD4CB00A7CF81 /* WCLoginBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCLoginBL.swift; sourceTree = "<group>"; };
+		95CCE89C297AD6E800A7CF81 /* WCGenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCGenericResponse.swift; sourceTree = "<group>"; };
+		95CCE89F297AEBD700A7CF81 /* WCRegisterWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCRegisterWS.swift; sourceTree = "<group>"; };
+		95CCE8A2297AEECF00A7CF81 /* WCRegisterBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCRegisterBL.swift; sourceTree = "<group>"; };
+		95CCE8A5297AF09500A7CF81 /* WCSessionBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSessionBL.swift; sourceTree = "<group>"; };
+		95CCE8A7297AF0BE00A7CF81 /* WCUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCUser.swift; sourceTree = "<group>"; };
+		95CCE8A9297AF43700A7CF81 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		95CCE8AB297AF5E600A7CF81 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		95CCE8AD297AF71F00A7CF81 /* WCHomeCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCHomeCollectionViewModel.swift; sourceTree = "<group>"; };
+		95CCE8AF297AF73B00A7CF81 /* WCHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCHome.swift; sourceTree = "<group>"; };
+		95CCE8B2297AF81900A7CF81 /* WCHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		95CCE8B4297AF92A00A7CF81 /* WCHomeWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCHomeWS.swift; sourceTree = "<group>"; };
+		95CCE8B8297B086600A7CF81 /* WCHomeBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCHomeBL.swift; sourceTree = "<group>"; };
 		D5DF7571601B86C7F98CEC1B /* Pods_WorldCup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldCup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D767C7A5933CDAFFDAE45ED6 /* Pods-WorldCup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldCup.release.xcconfig"; path = "Target Support Files/Pods-WorldCup/Pods-WorldCup.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +168,9 @@
 		958417562979B0A10024242B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				95CCE895297AD29B00A7CF81 /* UISessionRegister.swift */,
+				95CCE8A7297AF0BE00A7CF81 /* WCUser.swift */,
+				95CCE8AF297AF73B00A7CF81 /* WCHome.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				958417432979AC5D0024242B /* Main.storyboard */,
+				95CCE8A9297AF43700A7CF81 /* Home.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +204,9 @@
 				958417762979B2100024242B /* Closures.swift */,
 				958417782979B24C0024242B /* Segues.swift */,
 				9584177A2979B26C0024242B /* MessageAlert.swift */,
+				95CCE897297AD33000A7CF81 /* WebServicesURL.swift */,
+				95CCE8AB297AF5E600A7CF81 /* PinterestLayout.swift */,
+				95CCE89C297AD6E800A7CF81 /* WCGenericResponse.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -185,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				958417722979B1DF0024242B /* WCHomeViewController.swift */,
+				95CCE8B1297AF80800A7CF81 /* Cell */,
 				958417712979B1D00024242B /* Model */,
 			);
 			path = Home;
@@ -236,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				958417742979B1E80024242B /* WCHomeModel.swift */,
+				95CCE8AD297AF71F00A7CF81 /* WCHomeCollectionViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,8 +284,8 @@
 		9584177C2979B2920024242B /* API */ = {
 			isa = PBXGroup;
 			children = (
-				9584177E2979B2A00024242B /* WS */,
 				9584177D2979B29C0024242B /* BL */,
+				9584177E2979B2A00024242B /* WS */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -252,6 +293,10 @@
 		9584177D2979B29C0024242B /* BL */ = {
 			isa = PBXGroup;
 			children = (
+				95CCE8B7297B085100A7CF81 /* Home */,
+				95CCE8A4297AF08A00A7CF81 /* Session */,
+				95CCE8A1297AEEBB00A7CF81 /* Register */,
+				95CCE899297AD4C000A7CF81 /* Login */,
 			);
 			path = BL;
 			sourceTree = "<group>";
@@ -259,8 +304,75 @@
 		9584177E2979B2A00024242B /* WS */ = {
 			isa = PBXGroup;
 			children = (
+				95CCE8B6297B084900A7CF81 /* Home */,
+				95CCE89E297AEBC100A7CF81 /* Register */,
+				95CCE892297AD1BC00A7CF81 /* Login */,
 			);
 			path = WS;
+			sourceTree = "<group>";
+		};
+		95CCE892297AD1BC00A7CF81 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				95CCE893297AD1E500A7CF81 /* WCLoginWS.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		95CCE899297AD4C000A7CF81 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				95CCE89A297AD4CB00A7CF81 /* WCLoginBL.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		95CCE89E297AEBC100A7CF81 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				95CCE89F297AEBD700A7CF81 /* WCRegisterWS.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		95CCE8A1297AEEBB00A7CF81 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				95CCE8A2297AEECF00A7CF81 /* WCRegisterBL.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		95CCE8A4297AF08A00A7CF81 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				95CCE8A5297AF09500A7CF81 /* WCSessionBL.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		95CCE8B1297AF80800A7CF81 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				95CCE8B2297AF81900A7CF81 /* WCHomeCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		95CCE8B6297B084900A7CF81 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				95CCE8B4297AF92A00A7CF81 /* WCHomeWS.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		95CCE8B7297B085100A7CF81 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				95CCE8B8297B086600A7CF81 /* WCHomeBL.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +438,7 @@
 				9584174D2979AC5E0024242B /* LaunchScreen.storyboard in Resources */,
 				9584175F2979B1230024242B /* Colors.xcassets in Resources */,
 				958417612979B12F0024242B /* General.xcassets in Resources */,
+				95CCE8AA297AF43700A7CF81 /* Home.storyboard in Resources */,
 				9584174A2979AC5E0024242B /* Assets.xcassets in Resources */,
 				958417452979AC5D0024242B /* Main.storyboard in Resources */,
 			);
@@ -380,16 +493,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95CCE8A8297AF0BE00A7CF81 /* WCUser.swift in Sources */,
+				95CCE8AC297AF5E600A7CF81 /* PinterestLayout.swift in Sources */,
+				95CCE8A0297AEBD700A7CF81 /* WCRegisterWS.swift in Sources */,
 				958417482979AC5D0024242B /* WorldCup.xcdatamodeld in Sources */,
 				9584176D2979B1B30024242B /* WCRegisterModel.swift in Sources */,
+				95CCE8AE297AF71F00A7CF81 /* WCHomeCollectionViewModel.swift in Sources */,
+				95CCE8B9297B086600A7CF81 /* WCHomeBL.swift in Sources */,
+				95CCE89D297AD6E800A7CF81 /* WCGenericResponse.swift in Sources */,
 				9584173E2979AC5D0024242B /* AppDelegate.swift in Sources */,
+				95CCE894297AD1E500A7CF81 /* WCLoginWS.swift in Sources */,
+				95CCE898297AD33000A7CF81 /* WebServicesURL.swift in Sources */,
 				958417632979B1480024242B /* WCSplashModel.swift in Sources */,
 				958417732979B1DF0024242B /* WCHomeViewController.swift in Sources */,
+				95CCE89B297AD4CB00A7CF81 /* WCLoginBL.swift in Sources */,
 				9584176B2979B1A10024242B /* WCLoginModel.swift in Sources */,
+				95CCE8A6297AF09500A7CF81 /* WCSessionBL.swift in Sources */,
 				958417652979B15B0024242B /* WCSplashViewController.swift in Sources */,
 				958417792979B24C0024242B /* Segues.swift in Sources */,
+				95CCE8B0297AF73B00A7CF81 /* WCHome.swift in Sources */,
+				95CCE896297AD29B00A7CF81 /* UISessionRegister.swift in Sources */,
+				95CCE8A3297AEECF00A7CF81 /* WCRegisterBL.swift in Sources */,
 				9584177B2979B26C0024242B /* MessageAlert.swift in Sources */,
+				95CCE8B3297AF81900A7CF81 /* WCHomeCollectionViewCell.swift in Sources */,
 				958417682979B18F0024242B /* WCLoginViewController.swift in Sources */,
+				95CCE8B5297AF92A00A7CF81 /* WCHomeWS.swift in Sources */,
 				958417752979B1E80024242B /* WCHomeModel.swift in Sources */,
 				958417702979B1C90024242B /* WCRegisterViewController.swift in Sources */,
 				958417772979B2100024242B /* Closures.swift in Sources */,

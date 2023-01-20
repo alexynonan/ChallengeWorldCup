@@ -10,6 +10,6 @@ import UIKit
 struct Segues {
     static let loginViewController = "WCLoginViewController"
     static let registerViewController = "WCRegisterViewController"
-    static let homeViewController = "HomeViewController"
+    static let homeViewController = "WCHomeViewController"
     static let homeDetailViewController = "HomeDetailViewController"
 }

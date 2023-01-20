@@ -5,7 +5,7 @@
 //  Created by Alexander Ynoñan H. on 19/01/23.
 //
 
-import UIKit
+import CLDUtilities
 
 class WCLoginModel: NSObject {
 
@@ -32,9 +32,34 @@ extension WCLoginModel {
     func sessionLogin(
         email: String?,
         password: String?,
-        completion: Closures.Success
+        completion: @escaping Closures.Success
     ){
-        
+        let params = UISessionRegister(
+            name: "",
+            email: email ?? "",
+            password: password ?? "",
+            confirmPassword: ""
+        )
+        WCLoginBL.shared.getLogin(
+        params: params
+        ) { [weak self] in
+            guard let self = self else { return }
+            completion()
+            self.controller?.performSegue(
+                withIdentifier: Segues.homeViewController,
+                sender: nil
+            )
+        } errorService: { [weak self] errorMessage in
+            guard let self = self else { return }
+            completion()
+            let cancel = CSAlertButton(title: MessageAlert.General.agreeButton)
+            self.controller?.showSystemAlertGeneral(
+                MessageAlert.General.titleButton,
+                message: errorMessage,
+                cancel: cancel,
+                withCompletion: nil
+            )
+        }
     }
 
     func toRegister() {
