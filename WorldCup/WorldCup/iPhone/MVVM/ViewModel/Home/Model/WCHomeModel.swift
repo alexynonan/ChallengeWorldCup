@@ -10,6 +10,7 @@ import UIKit
 class WCHomeModel: NSObject {
 
     private weak var controller: UIViewController?
+    private weak var clvHome: UICollectionView?
 
     var succesSplashToController : Closures.Success = {}
 
@@ -19,9 +20,18 @@ class WCHomeModel: NSObject {
         }
     }
     
-    init(toController: UIViewController) {
+    lazy var refreshControll: UIRefreshControl! = {
+        var objRefreshControll = UIRefreshControl()
+        objRefreshControll.tintColor = .white
+        objRefreshControll.addTarget(self, action: #selector(self.loadService), for: .valueChanged)
+        return objRefreshControll
+    }()
+
+    init(toController: UIViewController,toCollectionView: UICollectionView) {
         super.init()
         controller = toController
+        clvHome = toCollectionView
+        clvHome?.backgroundView = refreshControll
         self.loadService()
     }
     
@@ -32,11 +42,13 @@ class WCHomeModel: NSObject {
 
 extension WCHomeModel {
 
-    func loadService() {
+    @objc private func loadService() {
+        refreshControll.beginRefreshing()
         WCHomeBL.shared.getHome { [weak self] array in
             self?.arrayHome = array
+            self?.refreshControll.endRefreshing()
         } errorService: { errorMessage in
-            
+            self.refreshControll.endRefreshing()
         }
     }
     func exitSession() {

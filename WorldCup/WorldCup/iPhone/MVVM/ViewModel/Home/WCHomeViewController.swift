@@ -38,8 +38,11 @@ class WCHomeViewController: UIViewController {
 extension WCHomeViewController {
 
     private func loadModel() {
-        modelHome = WCHomeModel(toController: self)
-        
+        modelHome = WCHomeModel(
+            toController: self,
+            toCollectionView: clvMundial
+        )
+
         modelHome.succesSplashToController = {
             self.modelHomeClv = WCHomeCollectionViewModel(
                 toController: self,
@@ -47,6 +50,7 @@ extension WCHomeViewController {
                 toArrayHome: self.modelHome.arrayHome
             )
             self.clvMundial.dataSource = self.modelHomeClv
+            self.clvMundial.reloadData()
         }
     }
 }
