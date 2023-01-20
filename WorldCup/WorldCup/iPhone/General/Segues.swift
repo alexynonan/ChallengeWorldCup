@@ -8,6 +8,7 @@
 import UIKit
 
 struct Segues {
+    static let loginViewController = "WCLoginViewController"
     static let homeViewController = "HomeViewController"
     static let homeDetailViewController = "HomeDetailViewController"
 }
